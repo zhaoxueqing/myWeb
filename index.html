@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的花园</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="img/bitbug_favicon.ico" rel="shortcut icon">
+    <style id="css">
+        /* 时钟刻度 */
+    </style>
+    <script src="js/myScript.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div class="header">
+    <ul class="nav clearfix">
+        <li class="my_Garden"><a href="index.html">秘密花园</a></li>
+        <li class="h_spring"><a href="wishTree.html">许愿树</a></li>
+        <li class="h_summer"><a href="javascript:;">花果山</a></li>
+        <li class="h_autumn"><a href="javascript:;">水帘洞</a></li>
+        <li class="h_winter"><a href="master.html">神秘谷主</a></li>
+    </ul>
+</div>
+<div class="contentBox">
+    <div class="contN">
+        <ul class="contentNo clearfix" id="boxNo">
+            <li><img src="img/mn1.jpg" alt=""></li>
+            <li><img src="img/mn2.jpg" alt=""></li>
+            <li><img src="img/mn3.jpg" alt=""></li>
+            <li><img src="img/mn4.jpg" alt=""></li>
+            <li><img src="img/mn5.jpg" alt=""></li>
+        </ul>
+    </div>
+
+</div>
+<div class="content">
+    <div class="content_Tab clearfix">
+        <div class="C_left"></div>
+        <div class="seasons" id="seasons">
+            <img src="img/spring.jpg"height="100%"/>
+            <a href="javascript:;" id="arr_left"></a>
+            <a href="javascript:;" id="arr_right"></a>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="C_right"></div>
+    </div>
+</div>
+<div class="content1">
+    <div class="content_Tab1 clearfix">
+        <div class="fl">
+            <ul class="effect clearfix" id="effect_tab">
+                <li class="active">看我七十二变</li>
+                <li>放大镜</li>
+                <li>滚动吧</li>
+                <li id="tot">收放</li>
+            </ul>
+            <div id="effect_div" class="effect_div">
+                <div class="active">
+                    <div class="ball">
+                        <input type="button" value="点我换一换" id="btnChange">
+                        <ul id="ball" class="clearfix">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="magnifier clearfix">
+                        <div id="small">
+                            <img src="img/big.png">
+                            <span id="layer1"></span>
+                        </div>
+                        <div id="big">
+                            <img src="img/toBig.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="clearfix" id="scroll_img">
+                        <div id="img_div">
+                            <div id="content_img"><img src="img/girl.png"></div>
+                        </div>
+                        <div id="bar">
+                            <div id="scroll_bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="toBigDiv">
+                        <input value="点击我吧*V*" type="button" id="Retractable">
+                        <ul class="toBig clearfix" id="toBig">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time fl">
+            <div class="time_wrap">
+                <ul id="timeList" class="timeList"></ul>
+                <div id="hours"></div>
+                <div id="min"></div>
+                <div id="sec"><img src="img/oO.png"></div>
+                <div id="oO"><img src="img/o.png"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content1">
+    <ul id="accordion" class="accordion">
+        <li><img src="img/a_1.jpg" alt=""></li>
+        <li><img src="img/a_2.jpg" alt=""></li>
+        <li><img src="img/a_3.jpg" alt=""></li>
+        <li><img src="img/a_4.jpg" alt=""></li>
+        <li><img src="img/a_5.jpg" alt=""></li>
+        <li><img src="img/a_6.jpg" alt=""></li>
+        <li><img src="img/a_0.jpg" alt=""></li>
+    </ul>
+</div>
+<div class="content1">
+    <div class="content_Tab2 clearfix">
+        <div class="fl weather">
+            <input value="查询天气" type="button" id="btn">
+            <input value="" type="text" id="city">
+            <span id="cityS">北京</span>
+            <h2 id="WeatherH2">北京</h2>
+            <ul id="WeatherUl" class="WeatherUl"></ul>
+        </div>
+        <div class="score fl">
+            <h2>评分：</h2>
+            <span></span>
+            <b>如果你满意，请点击右边星星</b><br>
+            <span></span>
+            <b>如果你不满意，请点击左边星星</b>
+            <div class="clearfix">
+                <ul id="star" class="star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <b class="fr">您打了<i class="red" id="score">0</i>分</b>
+            </div>
+            <span></span>
+            <b>您可以点亮半颗星</b>
+            <div class="clearfix">
+                <ul class="half_star" id="half_star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <b class="fr">您打了<i class="red" id="score1">0</i>分</b>
+            </div>
+            <span></span>
+            <b>您可以点亮一颗星星</b>
+            <div class="clearfix">
+                <ul class="star" id="one_star">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <b class="fr">您打了<i class="red" id="score2">0</i>分</b>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contentFoot">
+    <div class="footer clearfix">
+        <ul class="footerL fl">
+            <li><span>作者：</span><span>赵雪青</span></li>
+            <li><span>学历：</span><span>本科</span></li>
+            <li><span>毕业学校：</span><a href="http://www.zzu.edu.cn/">郑州大学</a></li>
+            <li><span>专业：</span><span>计算机科学与技术</span></li>
+            <li><span>手机：</span><span>13838216654</span></li>
+            <li><span>邮箱：</span><span>2480593985@qq.com</span></li>
+            <li><span>地址：</span><span>暂无长久居住地</span></li>
+        </ul>
+        <ul class="footerR fl">
+            <li>我的技能：</li>
+            <li>1.熟练使用HTML、CSS、CSS3、HTML5页面布局</li>
+            <li>2.熟练使用ajax、jsonp请求数据并熟练DOM操作</li>
+            <li>3.熟悉js事件对象，原型，继承，闭包等</li>
+            <li>4.对jquery、seajs模块化框架，angular、vue、MV*框架等有一定的了解</li>
+            <li>5.对nodejs，php,mysql有一定的了解</li>
+        </ul>
+    </div>
+</div>
+<div class="toTop" id="toTop"></div>
+</body>
+</html>

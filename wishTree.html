@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花园</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="img/bitbug_favicon.ico" rel="shortcut icon">
+    <script src="js/myScript.js"></script>
+    <script src="js/wishTree.js"></script>
+</head>
+<body class="wishBody">
+<div class="header">
+    <ul class="nav clearfix">
+        <li class="my_Garden"><a href="index.html">秘密花园</a></li>
+        <li class="h_spring"><a href="wishTree.html">许愿树</a></li>
+        <li class="h_summer"><a href="javascript:;">花果山</a></li>
+        <li class="h_autumn"><a href="javascript:;">水帘洞</a></li>
+        <li class="h_winter"><a href="master.html">神秘谷主</a></li>
+    </ul>
+</div>
+<div class="wishHead">
+    <div class="wishBD">
+        <input value="我的心愿" type="button" id="wishBtn">
+    </div>
+</div>
+<div class="wishMain" id="wishMain">
+</div>
+<div id="layer"></div>
+<div id="send-form">
+    <p class="title"><span>许下你的愿望</span><a href="javascript:;" id="close"></a></p>
+    <form action="" name="wish">
+        <p>
+            <label for="username">昵称：</label>
+            <input name="username" id="username" type="text">
+        </p>
+        <p>
+            <label for="content">愿望：(您还可以输入&nbsp;<span id="font-num">50</span>&nbsp;个字)</label>
+            <textarea name="content" id="content"></textarea>
+        </p>
+        <div id="phiz">
+            <img src="./img/phiz/zhuakuang.gif" alt="抓狂">
+            <img src="./img/phiz/baobao.gif" alt="抱抱">
+            <img src="./img/phiz/haixiu.gif" alt="害羞">
+            <img src="./img/phiz/ku.gif" alt="酷">
+            <img src="./img/phiz/xixi.gif" alt="嘻嘻">
+            <img src="./img/phiz/taikaixin.gif" alt="太开心">
+            <img src="./img/phiz/touxiao.gif" alt="偷笑">
+            <img src="./img/phiz/qian.gif" alt="钱">
+            <img src="./img/phiz/huaxin.gif" alt="花心">
+            <img src="./img/phiz/jiyan.gif" alt="挤眼">
+        </div>
+        <p></p>
+        <span id="send-btn">发表</span>
+    </form>
+</div>
+</body>
+</html>
